@@ -475,6 +475,19 @@ figcaption{font-size:13px;color:var(--fg-soft);margin-top:12px}
 .moments{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,26px);margin-top:clamp(60px,7vw,100px)}
 .moments img{aspect-ratio:4/3}
 @media(max-width:900px){.story-grid,.moments{grid-template-columns:1fr}.story-photo{position:static}section.roots[data-bg]{background:#2e2b28!important}}
+
+/* about v2 */
+.about-big{font-size:clamp(46px,7.4vw,124px)!important;line-height:.98;letter-spacing:-.045em;margin:22px 0 clamp(50px,6vw,90px);max-width:12ch}
+.about-big em{color:var(--clay-ink);font-style:normal}
+.about-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:var(--pad);align-items:end}
+.about-photo{margin:0;overflow:hidden;border-radius:4px}
+.about-photo img{width:100%;aspect-ratio:3/2;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.about-photo:hover img{transform:scale(1.03)}
+.about-copy{max-width:470px}
+.about-lede{font-family:var(--serif);font-size:clamp(22px,2vw,30px)!important;line-height:1.25;letter-spacing:-.02em;color:var(--fg)!important;margin-bottom:26px}
+.about-copy p{font-size:17px}
+.about-link{display:inline-flex;gap:12px;margin-top:10px;font-weight:500;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:4px}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -509,16 +522,16 @@ figcaption{font-size:13px;color:var(--fg-soft);margin-top:12px}
 </section>
 
 <section class="on-light intro wrap" id="about" data-bg="#ffffff" data-tone="light">
-  <div class="intro-grid">
-    <div class="copy">
-      <p class="label rv">About</p>
-      <p class="intro-text rv">Good things happen when people <em>make them together.</em></p>
-      <div class="rv">
-      <p><strong>Together WorX started with a simple idea.</strong> When people create side by side, something opens up. Strangers become collaborators, and ideas turn into something real.</p>
-      <p>Now Together WorX is opening a new chapter, with more partners and more ways to take part.</p>
-      </div>
+  <p class="label rv">About</p>
+  <h2 class="about-big rv">The right people, <em>in the same room.</em></h2>
+  <div class="about-grid">
+    <figure class="about-photo rv"><img src="assets/hands.jpg" alt="Many hands stacked together in a circle" loading="lazy"></figure>
+    <div class="about-copy rv">
+      <p class="about-lede">Together WorX brings artists and big thinkers into the same room as people who rarely get the invitation.</p>
+      <p>Some nights it looks like a concert. Other nights it looks like a whole block painting one wall. Nobody comes to watch. The people in the room make the evening what it is, and they leave knowing each other.</p>
+      <p>That's been true since the first night, and it's what this new chapter is built on.</p>
+      <a class="text-link about-link" href="#story">Read how it started <span>→</span></a>
     </div>
-    <figure class="rv"><img src="assets/people.jpg" alt="Together WorX volunteers in matching blue shirts" loading="lazy"></figure>
   </div>
 </section>
 
