@@ -5,6 +5,20 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Together WorX</title>
 <meta name="description" content="Together WorX brings people together through creativity and collaboration.">
+<link rel="canonical" href="https://togetherworx.org/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Together WorX">
+<meta property="og:url" content="https://togetherworx.org/">
+<meta property="og:title" content="Together WorX">
+<meta property="og:description" content="Bringing people together through creativity and collaboration. No one paints the whole picture.">
+<meta property="og:image" content="https://togetherworx.org/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hands painting bright streaks of color on a canvas">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Together WorX">
+<meta name="twitter:description" content="Bringing people together through creativity and collaboration.">
+<meta name="twitter:image" content="https://togetherworx.org/assets/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200..600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -605,7 +619,9 @@ figcaption{font-size:13px;color:var(--fg-soft);margin-top:12px}
     <h2 class="rv">Stay in <em>the loop.</em></h2>
     <div class="card rv">
       <p>Leave your email and you'll hear about new projects and ways to take part first.</p>
-      <form class="signup" id="signup">
+      <form class="signup" id="signup" name="updates" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="updates">
+        <p hidden><label>Leave this empty<input name="bot-field"></label></p>
         <input type="email" name="email" placeholder="Your email" required aria-label="Your email">
         <button class="btn" type="submit">Keep me posted <span class="arr">→</span></button>
       </form>
@@ -632,7 +648,9 @@ figcaption{font-size:13px;color:var(--fg-soft);margin-top:12px}
       <p class="rv" style="max-width:380px">Tell us who you are and what brought you here. A real person reads every message.</p>
       <p class="rv"><a class="mail" href="mailto:hello@togetherworx.org">hello@togetherworx.org</a></p>
     </div>
-    <form id="contact-form" class="rv">
+    <form id="contact-form" class="rv" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p hidden><label>Leave this empty<input name="bot-field"></label></p>
       <label>Your name<input name="name" autocomplete="name" required></label>
       <label>Email<input name="email" type="email" autocomplete="email" required></label>
       <label>I'm interested in
@@ -661,7 +679,7 @@ figcaption{font-size:13px;color:var(--fg-soft);margin-top:12px}
         <a href="#about">About</a><a href="#building">What it is</a><a href="#involved">Get involved</a><a href="#give">Support</a><a href="#contact">Contact</a>
       </nav>
     </div>
-    <div class="legal"><span>© 2026 Together WorX Inc. · A 501(c)(3) nonprofit organization</span><a href="#home">Back to top ↑</a></div>
+    <div class="legal"><span>© 2026 Together WorX Inc. · A 501(c)(3) nonprofit organization · EIN 82-3497638</span><a href="#home">Back to top ↑</a></div>
   </div>
 </footer>
 
@@ -687,13 +705,14 @@ if(!still)addEventListener('scroll',()=>{const r=band.parentElement.getBoundingC
 
 document.querySelectorAll('[data-interest]').forEach(a=>a.addEventListener('click',()=>{const s=document.querySelector('select[name=interest]');[...s.options].forEach(o=>{if(o.text.startsWith(a.dataset.interest))s.value=o.text})}));
 
-document.getElementById('signup').addEventListener('submit',e=>{e.preventDefault();const m=e.target.email.value;
-  document.getElementById('signup-note').textContent='Thanks. To get on the list, email hello@togetherworx.org from '+m+' and we’ll add you.';
-  try{location.href='mailto:hello@togetherworx.org?subject='+encodeURIComponent('Keep me posted')+'&body='+encodeURIComponent('Please add '+m+' to the Together WorX list.')}catch(_){}});
-document.getElementById('contact-form').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);
-  const body=d.get('message')+'\n\n'+d.get('name')+'\n'+d.get('email');
-  try{location.href='mailto:hello@togetherworx.org?subject='+encodeURIComponent('Together WorX: '+d.get('interest'))+'&body='+encodeURIComponent(body)}catch(_){}
-  document.getElementById('form-note').textContent='Your email app should open with your message ready to send. If it doesn’t, write to hello@togetherworx.org.'});
+const sendForm=(form,note,ok)=>form.addEventListener('submit',e=>{e.preventDefault();
+  const btn=form.querySelector('button[type=submit]'),n=document.getElementById(note);btn.disabled=true;n.textContent='Sending…';
+  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()})
+  .then(r=>{if(!r.ok)throw 0;form.reset();n.textContent=ok})
+  .catch(()=>{n.textContent='Something went wrong. Please write to hello@togetherworx.org.'})
+  .finally(()=>{btn.disabled=false})});
+sendForm(document.getElementById('signup'),'signup-note','Thanks. You’re on the list.');
+sendForm(document.getElementById('contact-form'),'form-note','Thank you. Your message is on its way, and a real person will read it.');
 </script>
 <script>
 (()=>{const h=document.getElementById('hero-h1');let i=0;
