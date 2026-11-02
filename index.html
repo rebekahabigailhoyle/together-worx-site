@@ -462,6 +462,19 @@ h1,h2,.intro-text,.band blockquote{font-weight:400!important}
 .proof-names{font-family:var(--sans)!important;font-size:14px!important;letter-spacing:0!important;color:#6b645c!important}
 .proof-names span{color:inherit!important}
 .proof-names i{width:3px!important;height:3px!important;background:#b5aea5!important;margin:0 10px!important;transform:translateY(-2px)!important}
+
+/* story section */
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--pad);align-items:start}
+.story-copy h2{margin:22px 0 34px;font-size:clamp(36px,4.2vw,68px)}
+.story-text p{font-size:17px;line-height:1.7;margin-bottom:1.1em;max-width:560px}
+.story-text .sig{font-family:var(--serif);font-size:20px;color:var(--fg)!important;margin-top:28px}
+.story-photo{margin:0;position:sticky;top:110px}
+.story-photo img,.moments img{width:100%;border-radius:4px;object-fit:cover}
+.story-photo img{aspect-ratio:4/5}
+figcaption{font-size:13px;color:var(--fg-soft);margin-top:12px}
+.moments{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,26px);margin-top:clamp(60px,7vw,100px)}
+.moments img{aspect-ratio:4/3}
+@media(max-width:900px){.story-grid,.moments{grid-template-columns:1fr}.story-photo{position:static}section.roots[data-bg]{background:#2e2b28!important}}
 </style>
 </head>
 <body>
@@ -530,20 +543,28 @@ h1,h2,.intro-text,.band blockquote{font-weight:400!important}
   <div class="wrap"><blockquote class="rv">Every color changes <em>the one beside it.</em></blockquote></div>
 </section>
 
-<section class="on-dark roots" data-bg="#33302c" data-tone="dark">
+<section class="on-dark roots" id="story" data-bg="#33302c" data-tone="dark">
   <div class="wrap">
-    <div class="roots-head">
-      <h2 class="rv">Where it <em>started.</em></h2>
-      <p class="rv">Moments from the work that led here, including evenings with Gary Zukav and Linda Francis, and Dr. Anna Yusim and Dr. Srini Pillay.</p>
+    <div class="story-grid">
+      <div class="story-copy">
+        <p class="label rv">How it started</p>
+        <h2 class="rv">It started with <em>a song in the park.</em></h2>
+        <div class="story-text rv">
+          <p>It started with a jog through Central Park. I heard voices so beautiful I honestly thought they were angels, and I followed them to the fountain. It was the Boyd family, busking on a Sunday afternoon.</p>
+          <p>I was planning my first Together WorX evening with Gary Zukav and Linda Francis, and Donna Karan had offered her Urban Zen space. I asked the Boyds if they would sing. They weren't sure. I came back the next Sunday and asked again. Still no answer. The Sunday after that, they said yes.</p>
+          <p>They gave their time that night, before Roc Nation and before the rest of the world knew their names.</p>
+          <p>That evening set the pattern for everything that followed. Generous people opened their doors, and artists and thinkers shared their gifts so something good could reach the people who need it most. Russell Simmons gave his Tantris studio in Los Angeles for our next evening. We welcomed Dr. Anna Yusim and Dr. Srini Pillay back at Urban Zen, and turned a gallery night with the Zukavs into relief for the Bahamas after the hurricane.</p>
+          <p>Now Together WorX is opening a new chapter, built on the same idea.</p>
+          <p class="sig">Rebekah Hoyle, Founder</p>
+        </div>
+      </div>
+      <figure class="story-photo rv"><img src="assets/urban-zen.jpg" alt="The first Together WorX evening at Urban Zen, a candlelit room with tall windows" loading="lazy"><figcaption>The first Together WorX evening, Urban Zen, New York</figcaption></figure>
     </div>
-  </div>
-  <div class="strip" tabindex="0" aria-label="Photos from past gatherings">
-    <figure><img src="assets/talk.jpg" alt="Guests listening at a Together WorX talk" loading="lazy"></figure>
-    <figure><img src="assets/stage.jpg" alt="Gary Zukav and Linda Francis speaking to a full room" loading="lazy"></figure>
-    <figure><img src="assets/fire-circle-2.jpg" alt="An outdoor circle gathering" loading="lazy"></figure>
-    <figure><img src="assets/conversation.jpg" alt="Guests in conversation at The Science of Spirituality" loading="lazy"></figure>
-    <figure><img src="assets/room.jpg" alt="A full audience in a brick-walled room" loading="lazy"></figure>
-    <figure><img src="assets/gathering.jpg" alt="A gathering in a sunlit space" loading="lazy"></figure>
+    <div class="moments">
+      <figure class="rv"><img src="assets/boyd-family.jpg" alt="The Boyd family with guests after performing at the first Together WorX evening" loading="lazy"><figcaption>The Boyd family, before Infinity Song</figcaption></figure>
+      <figure class="rv"><img src="assets/stage.jpg" alt="Gary Zukav and Linda Francis speaking to a full room" loading="lazy"><figcaption>An evening with Gary Zukav and Linda Francis</figcaption></figure>
+      <figure class="rv"><img src="assets/science-flyer.jpg" alt="Flyer for The Science of Spirituality with Dr. Anna Yusim and Dr. Srini Pillay" loading="lazy"><figcaption>The Science of Spirituality, Urban Zen</figcaption></figure>
+    </div>
   </div>
 </section>
 
