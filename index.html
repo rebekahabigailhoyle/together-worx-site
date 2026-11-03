@@ -504,6 +504,19 @@ figcaption{font-size:13px;color:var(--fg-soft);margin-top:12px}
 @media(max-width:900px){.about-grid{grid-template-columns:1fr}}
 .inv-photo{margin:36px 0 0;max-width:520px}.inv-photo img{width:100%;border-radius:4px;aspect-ratio:16/10;object-fit:cover}
 .sig-row{display:flex;align-items:center;gap:18px;margin-top:30px}.sig-img{width:72px;height:72px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.15)}.sig-row .sig{margin:0!important}.sig span{display:block;font-family:var(--sans);font-size:13px;color:var(--fg-soft);margin-top:4px;letter-spacing:.02em}
+
+/* v-review: hero sub, solo about, type band, join card */
+.hero-sub{font-size:clamp(17px,1.5vw,21px);max-width:34ch;margin:clamp(22px,3vh,32px) 0 0;color:rgba(255,255,255,.86)}
+.about-solo{max-width:760px}
+.about-solo .about-lede{font-family:var(--serif);font-size:clamp(24px,2.4vw,36px);line-height:1.25;letter-spacing:-.02em;font-weight:300;color:var(--fg)}
+.band{height:auto;background:#141210;padding-block:clamp(110px,15vw,220px)}
+.band::after{display:none}
+.band blockquote{max-width:16ch}
+.band blockquote em{color:var(--clay)}
+.involved .join{margin-top:clamp(34px,4vw,50px);max-width:520px}
+.involved .join p{margin-bottom:0}
+.involved .join .note:empty{display:none}
+.involved .join .note{margin-top:14px}
 </style>
 </head>
 <body>
@@ -525,12 +538,12 @@ figcaption{font-size:13px;color:var(--fg-soft);margin-top:12px}
 <section class="hero" id="home">
   <video id="film" autoplay muted loop playsinline poster="assets/poster.jpg"><source src="assets/painting.mp4" type="video/mp4"></video>
   <div class="wrap">
-    <p class="label rv">No one paints the whole picture</p>
-    <h1 id="hero-h1">Bringing people together through <em>creativity and collaboration.</em></h1>
+    <h1 id="hero-h1">No one paints <em>the whole picture.</em></h1>
+    <p class="hero-sub rv">Bringing people together through creativity and collaboration.</p>
     <div class="hero-bar rv">
       <div class="hero-actions">
         <a class="btn" href="#involved">Get involved <span class="arr">→</span></a>
-        <a class="btn ghost" href="#about">Our story</a>
+        <a class="btn ghost" href="#story">The story</a>
       </div>
       <button id="play" aria-label="Pause background video">Pause</button>
     </div>
@@ -540,12 +553,9 @@ figcaption{font-size:13px;color:var(--fg-soft);margin-top:12px}
 <section class="on-light intro wrap" id="about" data-bg="#ffffff" data-tone="light">
   <p class="label rv">About</p>
   <h2 class="about-big rv">Together, <em>it becomes possible.</em></h2>
-  <div class="about-grid">
-    <figure class="about-photo rv"><img src="assets/hands.jpg" alt="Many hands stacked together in a circle" loading="lazy"></figure>
-    <div class="about-copy rv">
-      <p class="about-lede">Together WorX is a nonprofit for creative collaboration.</p>
-      <a class="text-link about-link" href="#story">How it started <span>→</span></a>
-    </div>
+  <div class="about-copy about-solo rv">
+    <p class="about-lede">Together WorX is a nonprofit that connects artists with organizations and people who have ideas, so they can make work none of them could make alone.</p>
+    <a class="text-link about-link" href="#story">How it started <span>→</span></a>
   </div>
 </section>
 
@@ -553,21 +563,20 @@ figcaption{font-size:13px;color:var(--fg-soft);margin-top:12px}
   <div class="wrap">
     <div class="building-head centered">
       <p class="label rv">What it is</p>
-      <h2 class="rv">A new chapter, built in <em>partnership.</em></h2>
-      <p class="rv">Four things guide the work. The projects themselves get shaped with the people who join.</p>
+      <h2 class="rv">Built in <em>partnership.</em></h2>
+      <p class="rv">Four ideas shape this next chapter. The projects themselves take shape with the people who join.</p>
     </div>
     <div class="pillars">
       <div class="pillar rv"><span class="n">i.</span><h3>Creative projects</h3><p>Art made together, often by people who never would have met otherwise.</p></div>
-      <div class="pillar rv"><span class="n">ii.</span><h3>Partnerships</h3><p>Connecting organizations and creators who want the same good thing, so they get there faster.</p></div>
-      <div class="pillar rv"><span class="n">iii.</span><h3>Experiences</h3><p>Events and workshops that leave people more connected than when they arrived.</p></div>
+      <div class="pillar rv"><span class="n">ii.</span><h3>Partnerships</h3><p>Matching organizations with artists who care about the same thing.</p></div>
+      <div class="pillar rv"><span class="n">iii.</span><h3>Experiences</h3><p>Moments, online or in person, that leave people more connected than before.</p></div>
       <div class="pillar rv"><span class="n">iv.</span><h3>Community</h3><p>A growing circle of people who show up for each other's ideas.</p></div>
     </div>
   </div>
 </section>
 
 <section class="band" aria-label="A Together WorX circle">
-  <img id="bandimg" src="assets/fire-circle.jpg" alt="People standing in a circle around a stone fire bowl" loading="lazy">
-  <div class="wrap"><blockquote class="rv">Every color changes <em>the one beside it.</em></blockquote></div>
+    <div class="wrap"><blockquote class="rv">Every color changes <em>the one beside it.</em></blockquote></div>
 </section>
 
 <section class="on-dark roots" id="story" data-bg="#33302c" data-tone="dark">
@@ -577,11 +586,11 @@ figcaption{font-size:13px;color:var(--fg-soft);margin-top:12px}
         <p class="label rv">How it started</p>
         <h2 class="rv">It started with <em>a song in the park.</em></h2>
         <div class="story-text rv">
-          <p>It started with a jog through Central Park. I heard voices so beautiful I honestly thought they were angels, and I followed them to Bethesda Fountain. It was the Boyd family, busking on a Sunday afternoon.</p>
-          <p>I was planning my very first Together WorX evening, and a friend had offered a beautiful space. All I needed was the music, and I knew it had to be them.</p>
+          <p>I was jogging through Central Park when I heard voices so beautiful I thought they were angels. I followed them to Bethesda Fountain. It was the Boyd family, busking on a Sunday afternoon.</p>
+          <p>I was planning my very first Together WorX evening, and a friend had offered a space. All I needed was the music, and I knew it had to be them.</p>
           <p>I asked. They weren't sure. I came back the next Sunday and asked again. Still nothing. The Sunday after that, they said yes.</p>
           <p>That night a room full of strangers sat in candlelight and listened to a family the whole world would soon hear. The space was a gift. The music was a gift. Something opened in that room that I've been chasing ever since.</p>
-          <p>That's still how Together WorX works. I find people with something to give, and I keep asking until the right ones are in the same room. Over the years those rooms filled in New York and Los Angeles, and one gallery night became relief for the Bahamas after the hurricane.</p>
+          <p>That's still how Together WorX works. I find people with something to give, and I keep asking until the right ones find each other. Over the years that led to evenings in New York and Los Angeles, and one gallery night became relief for the Bahamas after the hurricane.</p>
           <p>This new chapter starts the same way. Someone out there has a gift to share. I'll keep asking.</p>
           <div class="sig-row"><img src="assets/rebekah.jpg" alt="Rebekah Hoyle" class="sig-img"><p class="sig">Rebekah Hoyle<span>Founder, Together WorX</span></p></div>
         </div>
@@ -590,8 +599,8 @@ figcaption{font-size:13px;color:var(--fg-soft);margin-top:12px}
     </div>
     <div class="moments">
       <figure class="rv"><img src="assets/boyd-family.jpg" alt="The Boyd family with guests after performing at the first Together WorX evening" loading="lazy"><figcaption>The Boyd family that first night</figcaption></figure>
-      <figure class="rv"><img src="assets/stage.jpg" alt="Speakers addressing a full room at an early Together WorX evening" loading="lazy"><figcaption>An early Together WorX evening</figcaption></figure>
-      <figure class="rv"><img src="assets/science-flyer.jpg" alt="Flyer for The Science of Spirituality with Dr. Anna Yusim and Dr. Srini Pillay" loading="lazy"><figcaption>The Science of Spirituality</figcaption></figure>
+      <figure class="rv"><img src="assets/stage.jpg" alt="A full room at an early Together WorX evening" loading="lazy"><figcaption>A full house, early on</figcaption></figure>
+      <figure class="rv"><img src="assets/conversation.jpg" alt="Guests listening at The Science of Spirituality evening" loading="lazy"><figcaption>The Science of Spirituality evening</figcaption></figure>
     </div>
   </div>
 </section>
@@ -600,32 +609,27 @@ figcaption{font-size:13px;color:var(--fg-soft);margin-top:12px}
   <div class="wrap involved-grid">
     <div>
       <p class="label rv">Get involved</p>
-      <h2 class="rv">There's a place <em>for you here.</em></h2>
-      <p class="lede rv">Whether you lead an organization or just have an idea, there's a way in.</p>
-      <figure class="inv-photo rv"><img src="assets/volunteers.jpg" alt="Volunteers in Together WorX t-shirts" loading="lazy"><figcaption>Together WorX volunteers</figcaption></figure>
+      <h2 class="rv">Find your <em>way in.</em></h2>
+      <p class="lede rv">Lead an organization or carry an idea around. Either way, start here.</p>
+      <!-- FIRST PROJECT: add a card here once it has a name, e.g.
+      <div class="project rv"><p class="label">Now forming</p><h3>Project name</h3><p>One line on what it is and who it's for. Date TBD.</p></div> -->
     </div>
+    <div>
     <ul class="ways rv">
-      <li><a href="#contact" data-interest="Partnership"><strong>Partner with us</strong><span>Organizations and foundations ready to create something good together.</span><i>→</i></a></li>
-      <li><a href="#contact" data-interest="Collaboration"><strong>Bring a project</strong><span>Have an idea you can't stop thinking about? Let's make it real.</span><i>→</i></a></li>
-      <li><a href="#contact" data-interest="Creative"><strong>Lend your creativity</strong><span>Artists and storytellers, your craft is how this spreads.</span><i>→</i></a></li>
-      <li><a href="#next"><strong>Join the community</strong><span>Follow along and hear about new projects first.</span><i>→</i></a></li>
+      <li><a href="#contact" data-interest="Partnership"><strong>Partner on a project</strong><span>For organizations and foundations looking for a creative partner.</span><i>→</i></a></li>
+      <li><a href="#contact" data-interest="Collaboration"><strong>Bring a project</strong><span>An idea you keep coming back to deserves a conversation.</span><i>→</i></a></li>
+      <li><a href="#contact" data-interest="Creative"><strong>Lend your creativity</strong><span>For artists and storytellers who want to make work with others.</span><i>→</i></a></li>
     </ul>
-  </div>
-</section>
-
-<section class="on-dark next wrap" id="next" data-bg="#171513" data-tone="dark">
-  <div class="next-center">
-    <p class="label rv">Updates</p>
-    <h2 class="rv">Stay in <em>the loop.</em></h2>
-    <div class="card rv">
-      <p>Leave your email and you'll hear about new projects and ways to take part first.</p>
-      <form class="signup" id="signup" name="updates" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="updates">
-        <p hidden><label>Leave this empty<input name="bot-field"></label></p>
-        <input type="email" name="email" placeholder="Your email" required aria-label="Your email">
-        <button class="btn" type="submit">Keep me posted <span class="arr">→</span></button>
-      </form>
-      <p class="note" id="signup-note" role="status"></p>
+      <div class="card join rv" id="next">
+        <p>Leave your email to hear about new projects first.</p>
+        <form class="signup" id="signup" name="updates" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="updates">
+          <p hidden><label>Leave this empty<input name="bot-field"></label></p>
+          <input type="email" name="email" placeholder="Your email" required aria-label="Your email">
+          <button class="btn" type="submit">Keep me posted <span class="arr">→</span></button>
+        </form>
+        <p class="note" id="signup-note" role="status"></p>
+      </div>
     </div>
   </div>
 </section>
@@ -633,9 +637,9 @@ figcaption{font-size:13px;color:var(--fg-soft);margin-top:12px}
 <section class="give" id="give">
   <div class="wrap">
     <p class="label rv">Support</p>
-    <h2 class="rv">Help good ideas <em>get off the ground.</em></h2>
-    <p class="rv">Every project starts with someone willing to back it. Your support helps fund new collaborations and keeps them open to everyone.</p>
-    <a class="btn rv" href="#contact" data-interest="Supporting">Talk to us about giving <span class="arr">→</span></a>
+    <h2 class="rv">Back the next <em>collaboration.</em></h2>
+    <p class="rv">Gifts pay for artists' time and materials, and keep every project free to join.</p>
+    <a class="btn rv" href="#contact" data-interest="Supporting">Ask about giving <span class="arr">→</span></a>
     <p class="tax rv">Together WorX Inc. is a 501(c)(3) nonprofit. Gifts are tax-deductible to the extent allowed by law.</p>
   </div>
 </section>
@@ -645,7 +649,7 @@ figcaption{font-size:13px;color:var(--fg-soft);margin-top:12px}
     <div>
       <p class="label rv">Contact</p>
       <h2 class="rv">Say <em>hello.</em></h2>
-      <p class="rv" style="max-width:380px">Tell us who you are and what brought you here. A real person reads every message.</p>
+      <p class="rv" style="max-width:380px">Share who you are and what brought you here. A real person reads every message.</p>
       <p class="rv"><a class="mail" href="mailto:hello@togetherworx.org">hello@togetherworx.org</a></p>
     </div>
     <form id="contact-form" class="rv" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
@@ -701,7 +705,7 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 document.querySelectorAll('.rv').forEach((el,i)=>{if(el.closest('.hero'))el.style.transitionDelay=(i*.15)+'s';io.observe(el)});
 
 const band=document.getElementById('bandimg');
-if(!still)addEventListener('scroll',()=>{const r=band.parentElement.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){band.style.transform=`translateY(${(r.top/innerHeight)*-6}%)`}},{passive:true});
+if(band&&!still)addEventListener('scroll',()=>{const r=band.parentElement.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){band.style.transform=`translateY(${(r.top/innerHeight)*-6}%)`}},{passive:true});
 
 document.querySelectorAll('[data-interest]').forEach(a=>a.addEventListener('click',()=>{const s=document.querySelector('select[name=interest]');[...s.options].forEach(o=>{if(o.text.startsWith(a.dataset.interest))s.value=o.text})}));
 
