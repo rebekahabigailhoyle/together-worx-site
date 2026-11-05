@@ -182,8 +182,8 @@ home = '''<main id="main">
 <section class="collab" aria-labelledby="collab-h">
   <div class="g12 rule">
     <div class="intro"><h2 id="collab-h">Collaborate.</h2><p>We welcome new ideas and opportunities to work together.</p></div>
-    <div class="path p1"><h3 class="h3">Collaborate</h3><p>Have an idea or an interest in working together? We'd love to hear from you.</p><a class="tlink" href="/contact/?interest=collaborate">Get in touch →</a></div>
-    <div class="path p2"><h3 class="h3">Support</h3><p>Help bring future Together WorX projects to life.</p><a class="tlink" href="https://donate.stripe.com/aFacN64Sw7XKcl4etDcEw01">Donate →</a></div>
+    <div class="path p1"><h3 class="h3">Create with us</h3><p>Have an idea or an interest in working together? We'd love to hear from you.</p><a class="tlink" href="/contact/?interest=collaborate">Get in touch →</a></div>
+    <div class="path p2"><h3 class="h3">Support our work</h3><p>Help bring future Together WorX projects to life.</p><a class="tlink" href="https://donate.stripe.com/aFacN64Sw7XKcl4etDcEw01">Donate →</a></div>
   </div>
 </section>
 </main>
@@ -358,8 +358,8 @@ col = '''<main id="main">
   <h1>Collaborate.</h1>
   <p class="lead">We welcome new ideas and opportunities to work together.</p>
   <div class="g12 paths">
-    <div class="p"><h2>Collaborate</h2><p>Have an idea or an interest in working together? We'd love to hear from you.</p><a class="btn btn-dark" href="/contact/?interest=collaborate">Get in touch</a></div>
-    <div class="p" id="support"><h2>Support</h2><p>Help bring future Together WorX projects to life.</p><a class="btn btn-dark" href="https://donate.stripe.com/aFacN64Sw7XKcl4etDcEw01">Donate</a><p style="margin:18px 0 0;font-size:15px"><a class="tlink" href="/contact/?interest=support">Questions about giving? Get in touch →</a></p><p class="tax">Together WorX Inc. is a registered 501(c)(3) nonprofit. Gifts are tax-deductible to the extent allowed by law.</p></div>
+    <div class="p"><h2>Create with us</h2><p>Have an idea or an interest in working together? We'd love to hear from you.</p><a class="btn btn-dark" href="/contact/?interest=collaborate">Get in touch</a></div>
+    <div class="p" id="support"><h2>Support our work</h2><p>Help bring future Together WorX projects to life.</p><a class="btn btn-dark" href="https://donate.stripe.com/aFacN64Sw7XKcl4etDcEw01">Donate</a><p style="margin:18px 0 0;font-size:15px"><a class="tlink" href="/contact/?interest=support">Questions about giving? Get in touch →</a></p><p class="tax">Together WorX Inc. is a registered 501(c)(3) nonprofit. Gifts are tax-deductible to the extent allowed by law.</p></div>
   </div>
 </section>
 </main>
