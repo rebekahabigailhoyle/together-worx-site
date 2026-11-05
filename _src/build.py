@@ -411,7 +411,19 @@ pv = '''<main id="main">
 '''
 pages.append(page("/privacy/", "Privacy", "How Together WorX handles the information you share.", pv, stay=False))
 
+# thank you (Stripe redirect after donation)
+ty = '''<main id="main">
+{{HEADER}}
+<section class="simple">
+  <h1>Thank you.</h1>
+  <p class="lead">Your gift helps bring future Together WorX projects to life.</p>
+  <p class="tax" style="font-size:15px;margin-top:22px">Together WorX Inc. is a registered 501(c)(3) nonprofit, and your gift is tax-deductible to the extent allowed by law. A receipt is on its way to your email.</p>
+  <p style="margin-top:44px"><a class="btn btn-dark" href="/work/">Explore Our Work</a></p>
+</section>
+</main>
+'''
+ty_path = page("/thank-you/", "Thank you", "Thank you for supporting Together WorX.", ty, stay=True)
 # thank-you fallback for no-JS form posts
 open("sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"  <url><loc>{SITE}{p}</loc></url>\n" for p in pages) + "</urlset>\n")
-open("robots.txt", "w").write(f"User-agent: *\nDisallow: /_src/\nSitemap: {SITE}/sitemap.xml\n")
+open("robots.txt", "w").write(f"User-agent: *\nDisallow: /_src/\nDisallow: /thank-you/\nSitemap: {SITE}/sitemap.xml\n")
 print("built", len(pages), "pages")
