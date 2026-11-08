@@ -354,6 +354,12 @@ ss = '''<main id="main">
     <ul class="list"><li>Tantris Flow class with Ivorie Jenkins</li><li>Community brunch</li><li>Lecture with Gary Zukav and Linda Francis</li></ul>
   </div>
 </section>
+<section class="pj-gallery">
+  <div class="g12">
+    <figure class="gal-l rv"><img src="/assets/img/soul-sunday-rebekah.jpg" alt="Rebekah with Linda Francis and Gary Zukav at Tantris" loading="lazy" width="1350" height="1800"><figcaption class="cap">Rebekah with Linda Francis and Gary Zukav</figcaption></figure>
+    <figure class="gal-r rv"><img src="/assets/img/soul-sunday-tantris.jpg" alt="Gary Zukav and Linda Francis talking with guests in the Tantris studio" loading="lazy" width="1600" height="1600" style="aspect-ratio:1/1"><figcaption class="cap" style="margin-top:12px">At Tantris</figcaption></figure>
+  </div>
+</section>
 ''' + nxt("A Conversation with Gary Zukav and Linda Francis", "/work/urban-zen/") + '''
 </main>
 '''
