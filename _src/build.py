@@ -278,6 +278,11 @@ ac = '''<main id="main">
     <figure class="gal-r rv" style="margin-top:200px"><img src="/assets/img/bahamas-relief.jpg" alt="Volunteers in Together WorX shirts" loading="lazy" width="1600" height="886" style="aspect-ratio:16/9"><figcaption class="cap" style="margin-top:12px">Bahamas relief.</figcaption></figure>
   </div>
 </section>
+<section class="pj-gallery">
+  <div class="g12">
+    <figure class="gal-c rv" style="margin-top:0"><img src="/assets/img/bahamas-fire-truck.jpg" alt="A red fire truck on the dock in the Bahamas after Hurricane Dorian" loading="lazy" width="1920" height="1080" style="aspect-ratio:16/9"><figcaption class="cap">The fire truck Together WorX paid to send to the Bahamas.</figcaption></figure>
+  </div>
+</section>
 <section class="pj-section g12">
   <h2>Thanksgiving</h2>
   <p class="txt">Together WorX partnered to bring a Thanksgiving meal to families in the Bahamas after the storm.</p>
