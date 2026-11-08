@@ -285,14 +285,13 @@ ac = '''<main id="main">
 <section class="pj-gallery">
   <div class="g12">
     <figure class="gal-a rv"><img src="/assets/img/thanksgiving-plates.jpg" alt="Two children holding plates of Thanksgiving food" loading="lazy" width="1770" height="996"></figure>
-    <figure class="gal-b rv"><img src="/assets/img/thanksgiving-table.jpg" alt="A young girl eating Thanksgiving dinner at a long table" loading="lazy" width="796" height="996"></figure>
-    <figure class="gal-c rv"><img src="/assets/img/thanksgiving-serving.jpg" alt="A volunteer handing out drinks to guests eating under a tent" loading="lazy" width="2160" height="996" style="aspect-ratio:16/8"></figure>
+    <figure class="gal-b rv"><img src="/assets/img/thanksgiving-line.jpg" alt="Children lined up with paper plates, waiting for Thanksgiving dinner" loading="lazy" width="910" height="716" style="aspect-ratio:910/716;object-position:center top"></figure>
   </div>
 </section>
 <section class="pj-gallery">
   <div class="g12">
-    <figure class="gal-a rv"><img src="/assets/img/thanksgiving-family.jpg" alt="A family sharing Thanksgiving plates of turkey, rice and sweet potato" loading="lazy" width="1448" height="996" style="aspect-ratio:1448/996"></figure>
-    <figure class="gal-b rv"><img src="/assets/img/thanksgiving-line.jpg" alt="Children lined up with paper plates, waiting for Thanksgiving dinner" loading="lazy" width="910" height="716" style="aspect-ratio:910/716;object-position:center top"></figure>
+    <figure class="gal-a rv"><img src="/assets/img/thanksgiving-serving.jpg" alt="A volunteer handing out drinks to guests eating under a tent" loading="lazy" width="2160" height="996"></figure>
+    <figure class="gal-b rv"><img src="/assets/img/thanksgiving-family.jpg" alt="A family sharing Thanksgiving plates of turkey, rice and sweet potato" loading="lazy" width="1448" height="996" style="aspect-ratio:1448/996"></figure>
   </div>
 </section>
 ''' + nxt("The Science of Spirituality", "/work/science-of-spirituality/") + '''
