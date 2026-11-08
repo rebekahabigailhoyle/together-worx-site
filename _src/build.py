@@ -278,6 +278,17 @@ ac = '''<main id="main">
     <figure class="gal-r rv" style="margin-top:200px"><img src="/assets/img/bahamas-relief.jpg" alt="Volunteers in Together WorX shirts" loading="lazy" width="1600" height="886" style="aspect-ratio:16/9"><figcaption class="cap" style="margin-top:12px">Bahamas relief.</figcaption></figure>
   </div>
 </section>
+<section class="pj-section g12">
+  <h2>Thanksgiving</h2>
+  <p class="txt">Together WorX partnered to bring a Thanksgiving meal to families in the Bahamas after the storm.</p>
+</section>
+<section class="pj-gallery">
+  <div class="g12">
+    <figure class="gal-a rv"><img src="/assets/img/thanksgiving-plates.jpg" alt="Two children holding plates of Thanksgiving food" loading="lazy" width="885" height="498"></figure>
+    <figure class="gal-b rv"><img src="/assets/img/thanksgiving-table.jpg" alt="A young girl eating Thanksgiving dinner at a long table" loading="lazy" width="398" height="498"></figure>
+    <figure class="gal-c rv"><img src="/assets/img/thanksgiving-family.jpg" alt="A family sharing Thanksgiving plates of turkey, rice and sweet potato" loading="lazy" width="724" height="498"></figure>
+  </div>
+</section>
 ''' + nxt("The Science of Spirituality", "/work/science-of-spirituality/") + '''
 </main>
 '''
