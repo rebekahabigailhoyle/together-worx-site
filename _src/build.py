@@ -360,6 +360,11 @@ ss = '''<main id="main">
     <figure class="gal-r rv"><img src="/assets/img/soul-sunday-tantris.jpg" alt="Gary Zukav and Linda Francis talking with guests in the Tantris studio" loading="lazy" width="1600" height="1600" style="aspect-ratio:1/1"><figcaption class="cap" style="margin-top:12px">At Tantris</figcaption></figure>
   </div>
 </section>
+<section class="pj-gallery">
+  <div class="g12">
+    <figure class="gal-c rv" style="margin-top:0"><img src="/assets/img/soul-sunday-lecture.jpg" alt="Guests seated on the floor listening to Gary Zukav and Linda Francis" loading="lazy" width="1600" height="1600" style="object-position:center 45%"><figcaption class="cap">The lecture with Gary Zukav and Linda Francis</figcaption></figure>
+  </div>
+</section>
 ''' + nxt("A Conversation with Gary Zukav and Linda Francis", "/work/urban-zen/") + '''
 </main>
 '''
