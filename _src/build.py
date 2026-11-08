@@ -3,13 +3,18 @@
 import os, json
 
 SITE = "https://togetherworx.org"
-DESC = "Together WorX creates unexpected possibilities through creativity and collaboration."
+MISSION = "Together WorX brings people, creativity, and resources together to support communities and build a more connected, resilient future."
+DESC = MISSION
 
 def head(title, desc, path, og="/assets/og.jpg"):
-    full = title if title == "Together WorX" else f"{title} | Together WorX"
+    full = "Together WorX | Community, Creativity &amp; Collaboration" if title == "Together WorX" else f"{title} | Together WorX"
     ld = json.dumps({"@context": "https://schema.org", "@type": "NGO", "name": "Together WorX",
                      "legalName": "Together WorX Inc.", "url": SITE, "email": "hello@togetherworx.org",
-                     "nonprofitStatus": "Nonprofit501c3", "slogan": "No one paints the whole picture."})
+                     "nonprofitStatus": "Nonprofit501c3", "slogan": "No one paints the whole picture.",
+                     "logo": SITE + "/assets/together-worx-logo-dark.png", "@id": SITE + "/#org"})
+    if path == "/":
+        ld = json.dumps({"@context": "https://schema.org", "@graph": [json.loads(ld) | {"@context": None},
+                         {"@type": "WebSite", "name": "Together WorX", "url": SITE + "/", "publisher": {"@id": SITE + "/#org"}}]}).replace('"@context": null, ', '')
     return f'''<!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
@@ -148,14 +153,13 @@ home = '''<main id="main">
   <video id="film" muted loop playsinline preload="metadata" poster="/assets/img/hero-poster.jpg" aria-label="Hands painting bright streaks of color on a canvas"><source src="/assets/video/painting-loop.mp4" type="video/mp4"></video>
   <div class="on-dark">{{HEADER}}</div>
   <div class="hero-foot">
-    <h1>No one paints<br><em>the whole picture.</em></h1>
+    <div class="hero-text"><h1>No one paints<br><em>the whole picture.</em></h1><p class="mission">''' + MISSION + '''</p></div>
     <div class="hero-links"><a class="explore" href="#work">Explore Our Work <span aria-hidden="true">↓</span></a><button class="pause" id="pause" type="button">Pause</button></div>
   </div>
 </section>
 
 <section class="idea g12">
   <h2 class="rv">What becomes possible<br><span>together.</span></h2>
-  <p class="rv">Together WorX brings people together to turn ideas into reality through creativity and collaboration.</p>
 </section>
 
 <section class="work" id="work" aria-labelledby="work-h">
@@ -181,7 +185,7 @@ home = '''<main id="main">
 
 <section class="collab" aria-labelledby="collab-h">
   <div class="g12 rule">
-    <div class="intro"><h2 id="collab-h">Collaborate.</h2><p>We welcome new ideas and opportunities to work together.</p></div>
+    <div class="intro"><h2 id="collab-h">Collaborate.</h2><p>Have a community need, a partner in mind or a skill to share? Tell us about it.</p></div>
     <div class="path p1"><h3 class="h3">Create with us</h3><p>Have an idea or an interest in working together? We'd love to hear from you.</p><a class="tlink" href="/contact/?interest=collaborate">Get in touch →</a></div>
     <div class="path p2"><h3 class="h3">Support our work</h3><p>Help bring future Together WorX projects to life.</p><a class="tlink" href="https://donate.stripe.com/aFacN64Sw7XKcl4etDcEw01">Donate →</a></div>
   </div>
@@ -392,7 +396,7 @@ con = '''<main id="main">
 {{HEADER}}
 <section class="simple">
   <h1>Contact.</h1>
-  <p class="lead">Tell us who you are and what brought you here.</p>
+  <p class="lead">Tell us who you are and what you have in mind. For a collaboration, share who's involved, what's needed and how you'd like to help.</p>
   <div class="g12 contact-grid">
     <div class="info"><a class="mail" href="mailto:hello@togetherworx.org">hello@togetherworx.org</a></div>
     <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="js-form" data-ok="Thank you. Your message is on its way.">
