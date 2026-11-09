@@ -368,7 +368,7 @@ sc = '''<main id="main">
 <section class="pj-gallery">
   <div class="g12">
     <figure class="gal-l rv"><img src="/assets/img/science-talk.jpg" alt="Guests listening as The Science of Spirituality begins" loading="lazy" width="1350" height="1800"></figure>
-    <figure class="gal-r rv"><img src="/assets/img/fire-ceremony.jpg" alt="Guests gathered around a fire ceremony in a courtyard" loading="lazy" width="1350" height="1800"><img class="over3" src="/assets/img/fire-ceremony-2.jpg" alt="The fire ceremony from another angle" loading="lazy" width="1000" height="1333"><figcaption class="cap">The fire ceremony</figcaption></figure>
+    <figure class="gal-r rv"><video class="fire-clip" src="/assets/video/fire-ceremony.mp4" poster="/assets/img/fire-ceremony-poster.jpg" muted loop playsinline autoplay preload="metadata" aria-label="The fire ceremony beginning, with guests gathered in the courtyard"></video><figcaption class="cap" style="margin-top:14px">The fire ceremony</figcaption></figure>
   </div>
 </section>
 <section class="pj-archive"><div class="inner g12"><figure><img src="/assets/img/artwork-science.jpg" alt="Original promotional artwork: Together WorX presents The Science of Spirituality with Dr. Anna Yusim and Dr. Srini Pillay" loading="lazy" width="1340" height="746"><figcaption class="cap">Original promotional artwork</figcaption></figure></div></section>
