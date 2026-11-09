@@ -509,3 +509,4 @@ a.hp-lead{display:grid}
 .pause:hover{color:#fff!important;-webkit-text-fill-color:#fff}
 .pause:focus-visible{outline:2px solid var(--red);outline-offset:4px}
 .whole-grid img,.founder figure img,.hp-lead img,.hp-pair img,.about-hero img,.pj-hero,.pj-gallery img,.story-body aside img,.gal-r>video,.hp-lead .frame video{filter:saturate(.95) contrast(1.04)}
+@media (min-width:901px){.nav{background:none}}
