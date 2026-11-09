@@ -518,3 +518,4 @@ a.hp-lead{display:grid}
 }
 /* pause: hidden from view, still reachable by keyboard and screen readers */
 .hero-links .pause:not(:focus-visible){position:absolute!important;width:1px;height:1px;min-height:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;padding:0;margin:-1px}
+.whole-grid .w1 img{filter:none}
