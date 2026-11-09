@@ -146,6 +146,35 @@ P4 = '''<div class="g12 proj-c rv">
       </a>
     </div>'''
 
+HP = '''<a class="g12 hp-lead card-link rv" href="/work/urban-zen/">
+      <img src="/assets/img/urban-zen.jpg" alt="Guests in candlelight at Urban Zen for the first Together WorX event" loading="lazy" width="1800" height="1350">
+      <div class="proj-text">
+        <p class="meta">Urban Zen | New York</p>
+        <h3 class="h3">A Conversation with Gary Zukav and Linda Francis</h3>
+        <p class="desc">Gary Zukav and Linda Francis in conversation at Donna Karan's Urban Zen, with a live performance by Infinity Song.</p>
+      </div>
+    </a>
+    <div class="g12 hp-pair">
+      <a class="card-link rv" href="/work/art-of-coming-together/">
+        <img src="/assets/img/gallery.jpg" alt="Guests gathered in the brick gallery for The Art of Coming Together" loading="lazy" width="1800" height="1350">
+        <div class="proj-text">
+          <p class="meta">New York | Hurricane Dorian Relief</p>
+          <h3 class="h3">The Art of Coming Together</h3>
+          <p class="with">With Gary Zukav and Linda Francis</p>
+          <p class="desc">An evening of conversation, live music, and a collective artwork created by guests, raising funds for hurricane relief in the Bahamas.</p>
+        </div>
+      </a>
+      <a class="card-link rv" href="/work/science-of-spirituality/">
+        <img src="/assets/img/fire-ceremony.jpg" alt="Guests gathered around a fire ceremony in a courtyard at The Science of Spirituality" loading="lazy" width="1350" height="1800" style="object-position:center 60%">
+        <div class="proj-text">
+          <p class="meta">New York</p>
+          <h3 class="h3">The Science of Spirituality</h3>
+          <p class="with">With Dr. Anna Yusim and Dr. Srini Pillay</p>
+          <p class="desc">An immersive experience exploring the connection between science and spirituality, combining thought-provoking conversations with interactive workshops.</p>
+        </div>
+      </a>
+    </div>'''
+
 # ---------- home ----------
 home = '''<main id="main">
 <section class="hero">
@@ -199,15 +228,13 @@ home = '''<main id="main">
 
 <section class="work" id="work" aria-labelledby="work-h">
   <div class="g12 rule work-head"><h2 id="work-h">Selected Projects</h2><a class="tlink" href="/work/">All projects →</a></div>
-  ''' + P1 + '''
-  ''' + P23 + '''
+  ''' + HP + '''
 </section>
 
 
 <section class="collab" aria-labelledby="collab-h">
   <div class="g12 rule">
     <div class="intro"><h2 id="collab-h">What could we make possible together?</h2><p>Perhaps you have an idea, see a need in your community, or have a space, skill, or resources to offer. We'd love to hear what you have in mind and explore where we could contribute.</p><p style="margin-top:26px"><a class="btn btn-dark" href="/contact/?interest=collaborate">Discuss a collaboration</a></p></div>
-    <div class="path p1"><h3 class="h3">Create with us</h3><p>Have an idea or an interest in working together? We'd love to hear from you.</p><a class="tlink" href="/contact/?interest=collaborate">Get in touch →</a></div>
     <div class="path p2"><h3 class="h3">Support our work</h3><p>Help bring future Together WorX projects to life.</p><a class="tlink" href="https://donate.stripe.com/aFacN64Sw7XKcl4etDcEw01">Donate →</a></div>
   </div>
 </section>
@@ -424,7 +451,6 @@ col = '''<main id="main">
   <p class="lead">Perhaps you have an idea, see a need in your community, or have a space, skill, or resources to offer. We'd love to hear what you have in mind and explore where we could contribute.</p>
   <p style="margin-top:30px"><a class="btn btn-dark" href="/contact/?interest=collaborate">Discuss a collaboration</a></p>
   <div class="g12 paths">
-    <div class="p"><h2>Create with us</h2><p>Have an idea or an interest in working together? We'd love to hear from you.</p><a class="btn btn-dark" href="/contact/?interest=collaborate">Get in touch</a></div>
     <div class="p" id="support"><h2>Support our work</h2><p>Help bring future Together WorX projects to life.</p><a class="btn btn-dark" href="https://donate.stripe.com/aFacN64Sw7XKcl4etDcEw01">Donate</a><p style="margin:18px 0 0;font-size:15px"><a class="tlink" href="/contact/?interest=support">Questions about giving? Get in touch →</a></p><p class="tax">Together WorX Inc. is a registered 501(c)(3) nonprofit. Gifts are tax-deductible to the extent allowed by law.</p></div>
   </div>
 </section>
