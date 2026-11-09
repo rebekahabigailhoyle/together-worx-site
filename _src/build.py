@@ -244,7 +244,7 @@ home = '''<main id="main">
 
 <section class="collab" aria-labelledby="collab-h">
   <div class="g12 rule">
-    <div class="intro"><h2 id="collab-h">What could we make possible together?</h2><p>Perhaps you have an idea, see a need in your community, or have a space, skill, or resources to offer. We'd love to hear what you have in mind and explore where we could contribute.</p><p style="margin-top:26px"><a class="btn btn-dark" href="/contact/?interest=collaborate">Discuss a collaboration</a></p></div>
+    <div class="intro"><h2 id="collab-h">What could we make possible <span class="red">together</span>?</h2><p>Perhaps you have an idea, see a need in your community, or have a space, skill, or resources to offer. We'd love to hear what you have in mind and explore where we could contribute.</p><p style="margin-top:26px"><a class="btn btn-dark" href="/contact/?interest=collaborate">Discuss a collaboration</a></p></div>
     <div class="path p2"><h3 class="h3">Support our work</h3><p>Help bring future Together WorX projects to life.</p><a class="tlink" href="https://donate.stripe.com/aFacN64Sw7XKcl4etDcEw01">Donate →</a></div>
   </div>
 </section>
