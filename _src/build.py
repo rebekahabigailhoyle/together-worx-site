@@ -203,7 +203,7 @@ home = '''<main id="main">
 
 <section class="founder" aria-labelledby="founder-h">
   <div class="g12">
-    <figure class="rv"><div class="frame"><img data-drift src="/assets/img/bethesda-wide.jpg" alt="The Boyd family singing at Bethesda Fountain in Central Park" loading="lazy" width="2000" height="1500"></div><figcaption class="cap">Bethesda Fountain, Central Park</figcaption></figure>
+    <figure class="rv"><div class="frame"><img data-drift src="/assets/img/bethesda-wide.jpg" alt="The Boyd family singing at Bethesda Fountain in Central Park" loading="lazy" width="2000" height="1500"></div><figcaption class="cap">Bethesda Fountain, Central Park, August 27, 2017</figcaption></figure>
     <div class="story rv">
       <p class="label">How it started</p>
       <h2 id="founder-h">The Answer Was&nbsp;No</h2>
@@ -303,7 +303,7 @@ uz = '''<main id="main">
   <div class="g12">
     <figure class="gal-a rv"><video src="/assets/video/boyds-first-evening.mp4" poster="/assets/img/boyds-first-evening-poster.jpg" muted loop playsinline autoplay preload="none" aria-label="The Boyd family performing at the first Together WorX event"></video><figcaption class="cap">The Boyds performing that night</figcaption></figure>
     <figure class="gal-b rv"><img src="/assets/img/first-night.jpg" alt="Rebekah with Gary Zukav, Linda Francis and the Boyds after the evening" loading="lazy" width="640" height="1136" style="object-position:center 30%"><figcaption class="cap">Rebekah, Gary Zukav, Linda Francis and the Boyds</figcaption></figure>
-    <figure class="gal-c rv"><img src="/assets/img/bethesda-wide.jpg" alt="The Boyd family singing at Bethesda Fountain in Central Park" loading="lazy" width="2000" height="1500"><figcaption class="cap">Singing at Bethesda Fountain, Central Park</figcaption></figure>
+    <figure class="gal-c rv"><img src="/assets/img/bethesda-wide.jpg" alt="The Boyd family singing at Bethesda Fountain in Central Park" loading="lazy" width="2000" height="1500"><figcaption class="cap">Singing at Bethesda Fountain, Central Park, August 27, 2017</figcaption></figure>
   </div>
 </section>
 ''' + nxt("The Art of Coming Together", "/work/art-of-coming-together/") + '''
