@@ -3,7 +3,7 @@
 import os, json
 
 SITE = "https://togetherworx.org"
-MISSION = "Bringing people together through creativity and collaboration. Whoever you are, wherever you start."
+MISSION = "Bringing people together through creativity and collaboration."
 DESC = MISSION
 
 def head(title, desc, path, og="/assets/og.jpg"):
