@@ -154,7 +154,7 @@ home = '''<main id="main">
   <div class="on-dark">{{HEADER}}</div>
   <div class="hero-foot">
     <div class="hero-text"><h1>No one paints<br><em>the whole picture.</em></h1><p class="mission">''' + MISSION + '''</p></div>
-    <div class="hero-links"><a class="explore" href="#work">Explore Our Work <span aria-hidden="true">↓</span></a><button class="pause" id="pause" type="button">Pause</button></div>
+    <div class="hero-links"><a class="explore" href="#work">Explore Our Work <span aria-hidden="true">↓</span></a><a class="explore" href="/contact/?interest=collaborate">Discuss a Collaboration <span aria-hidden="true">→</span></a><button class="pause" id="pause" type="button">Pause</button></div>
   </div>
 </section>
 
@@ -173,8 +173,18 @@ home = '''<main id="main">
   </div>
 </section>
 
+<section class="purpose" aria-labelledby="purpose-h">
+  <div class="g12 rule">
+    <h2 id="purpose-h" class="rv">The purpose comes&nbsp;first.</h2>
+    <div class="ptext rv">
+      <p>A conversation. A shared canvas. An evening of music. The form changes with the people involved and what they hope to make possible together.</p>
+      <p>We begin with a community need or an idea, then bring people and resources together to help it take shape.</p>
+    </div>
+  </div>
+</section>
+
 <section class="work" id="work" aria-labelledby="work-h">
-  <div class="g12 rule work-head"><h2 id="work-h">Our Work</h2><a class="tlink" href="/work/">All projects →</a></div>
+  <div class="g12 rule work-head"><h2 id="work-h">Selected Projects</h2><a class="tlink" href="/work/">All projects →</a></div>
   ''' + P1 + '''
   ''' + P23 + '''
 </section>
@@ -198,7 +208,7 @@ home = '''<main id="main">
 
 <section class="collab" aria-labelledby="collab-h">
   <div class="g12 rule">
-    <div class="intro"><h2 id="collab-h">Collaborate.</h2><p>Have a community need, a partner in mind or a skill to share? Tell us about it.</p></div>
+    <div class="intro"><h2 id="collab-h">What could we make possible together?</h2><p>Perhaps you have an idea, see a need in your community, or have a space, skill, or resources to offer. We'd love to hear what you have in mind and explore where we could contribute.</p><p style="margin-top:26px"><a class="btn btn-dark" href="/contact/?interest=collaborate">Discuss a collaboration</a></p></div>
     <div class="path p1"><h3 class="h3">Create with us</h3><p>Have an idea or an interest in working together? We'd love to hear from you.</p><a class="tlink" href="/contact/?interest=collaborate">Get in touch →</a></div>
     <div class="path p2"><h3 class="h3">Support our work</h3><p>Help bring future Together WorX projects to life.</p><a class="tlink" href="https://donate.stripe.com/aFacN64Sw7XKcl4etDcEw01">Donate →</a></div>
   </div>
@@ -218,7 +228,7 @@ ARCH = '''<section class="archive" aria-labelledby="arch-h">
       <p class="cap">Original flyer</p>
       <h3 class="h3">The Rising Musical Family Tour</h3>
       <p class="meta">Harlem, New York | Planned Event</p>
-      <p class="adesc">Featuring Infinity's Song, Victory, and Syncopated Ladies, with Together WorX supporting Bahamas relief alongside Roc Nation.</p>
+      <p class="adesc">Featuring Infinity Song (then billed as Infinity's Song), Victory, and Syncopated Ladies, with Together WorX supporting Bahamas relief alongside Roc Nation.</p>
       <p class="canceled">Canceled due to COVID.</p>
     </article>
     <article class="rv">
@@ -411,8 +421,10 @@ pages.append(page("/about/", "About", "How Together WorX began: a song at Bethes
 col = '''<main id="main">
 {{HEADER}}
 <section class="simple">
-  <h1>Collaborate.</h1>
-  <p class="lead">We welcome new ideas and opportunities to work together.</p>
+  <p class="label" style="margin-bottom:22px;font-weight:600">Collaborate</p>
+  <h1>What could we make possible together?</h1>
+  <p class="lead">Perhaps you have an idea, see a need in your community, or have a space, skill, or resources to offer. We'd love to hear what you have in mind and explore where we could contribute.</p>
+  <p style="margin-top:30px"><a class="btn btn-dark" href="/contact/?interest=collaborate">Discuss a collaboration</a></p>
   <div class="g12 paths">
     <div class="p"><h2>Create with us</h2><p>Have an idea or an interest in working together? We'd love to hear from you.</p><a class="btn btn-dark" href="/contact/?interest=collaborate">Get in touch</a></div>
     <div class="p" id="support"><h2>Support our work</h2><p>Help bring future Together WorX projects to life.</p><a class="btn btn-dark" href="https://donate.stripe.com/aFacN64Sw7XKcl4etDcEw01">Donate</a><p style="margin:18px 0 0;font-size:15px"><a class="tlink" href="/contact/?interest=support">Questions about giving? Get in touch →</a></p><p class="tax">Together WorX Inc. is a registered 501(c)(3) nonprofit. Gifts are tax-deductible to the extent allowed by law.</p></div>

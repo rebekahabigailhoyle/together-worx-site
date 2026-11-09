@@ -264,7 +264,7 @@ a.card-link:hover h3{color:var(--red)}
   .hero-foot{flex-direction:column;align-items:flex-start;gap:14px;bottom:40px}
   .hero h1{font-size:clamp(46px,13.6vw,64px);line-height:.98}
   .hero .mission{font-size:16px;margin-top:16px}
-  .hero-links{padding-bottom:0}
+  .hero-links{padding-bottom:0;flex-wrap:wrap;column-gap:22px;row-gap:0}
   .explore{display:inline-flex;align-items:center;min-height:44px}
   .idea{padding:96px var(--pad) 100px}
   .idea h2{font-size:clamp(44px,14vw,60px)}
@@ -356,3 +356,8 @@ a.card-link:hover h3{color:var(--red)}
   .whole-grid .w1,.whole-grid .w2,.whole-grid .w6{grid-column:1/-1!important}
 }
 .red{color:var(--red)}
+.purpose{padding:0 var(--pad) 150px}
+.purpose h2{grid-column:1/span 6;font-size:clamp(40px,4.6vw,66px);line-height:.98;letter-spacing:-.05em}
+.purpose .ptext{grid-column:8/span 5;padding-top:10px}
+.purpose .ptext p{font-size:19px;line-height:1.55;color:var(--body);margin-bottom:18px}
+@media (max-width:900px){.purpose{padding-bottom:84px}.purpose h2{font-size:40px}.purpose .ptext{margin-top:24px}.purpose .ptext p{font-size:17px}}
