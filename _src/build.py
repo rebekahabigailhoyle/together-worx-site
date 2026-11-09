@@ -168,6 +168,7 @@ home = '''<main id="main">
     <figure class="w1 rv"><img src="/assets/img/whole-canvas.jpg" alt="A group canvas with Together WorX painted in the middle, surrounded by names and hearts" loading="lazy" width="1046" height="1400"></figure>
     <figure class="w2 rv"><img src="/assets/img/whole-painting.jpg" alt="Children and adults painting cherry blossoms on a canvas together" loading="lazy" width="1400" height="1400"></figure>
     <figure class="w5 rv"><img src="/assets/img/whole-hug.jpg" alt="Two people hugging in the middle of a crowded room" loading="lazy" width="1050" height="1400"></figure>
+    <figure class="w7 rv"><img src="/assets/img/whole-lecture.jpg" alt="Guests seated on the floor listening to Gary Zukav and Linda Francis" loading="lazy" width="1050" height="1400"></figure>
     <figure class="w6 rv"><img src="/assets/img/whole-mural.jpg" alt="People painting a city mural side by side" loading="lazy" width="1208" height="906"></figure>
   </div>
 </section>
