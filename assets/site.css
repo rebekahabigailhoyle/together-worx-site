@@ -526,3 +526,4 @@ a.hp-lead{display:grid}
 .about-hero .cap{padding:0 var(--pad)}
 @media (max-width:900px){.story-body .text>p:first-child{font-size:26px}}
 .story-body .text p.turn{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0;font-size:32px}
+.collab .intro p.because{font-family:var(--serif);font-style:italic;font-size:26px;line-height:1.2;color:var(--ink);margin-top:22px}
