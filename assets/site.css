@@ -463,3 +463,21 @@ a.hp-lead{display:grid}
 .whole-grid .w1>img{transition-delay:.3s}.whole-grid .w5>img{transition-delay:.25s}.whole-grid .w7>img{transition-delay:.5s}
 .no-js .wipe,.no-js .whole-grid figure.wipe>img{opacity:1}
 @media (prefers-reduced-motion:reduce){.wipe:not(figure),.whole-grid figure.wipe>img{opacity:1}}
+
+/* ---- Candlelight: mood taken from the Urban Zen room ---- */
+:root{--ink:#1a1714;--body:#2a2521;--candle:#c9a46a;--warmwhite:#f4ede1}
+.founder,.stay,.next{background:radial-gradient(ellipse 70% 90% at 85% 15%,rgba(201,150,90,.16),transparent 60%),radial-gradient(ellipse 60% 70% at 10% 100%,rgba(201,140,80,.10),transparent 65%),var(--night)}
+.founder,.founder .sig,.founder .pull,.founder .tlink,.stay,.next{color:var(--warmwhite)}
+.founder .story p.body{color:rgba(244,237,225,.82)}
+.founder .label,.founder .cap,.founder .sig+p{color:rgba(244,237,225,.55)}
+.founder figure img,.hp-lead .frame img{box-shadow:0 30px 80px -30px rgba(0,0,0,.6)}
+.whole-grid img,.founder figure img,.hp-lead img,.hp-pair img,.about-hero img,.pj-hero,.pj-gallery img,.story-body aside img,.gal-r>video,.hp-lead .frame video{filter:saturate(.92) contrast(1.05) sepia(.14) brightness(.99)}
+/* footer joins the evening */
+.site-foot{background:var(--night);color:var(--warmwhite)}
+.site-foot a,.foot-brand{color:var(--warmwhite)}
+.foot-tag{color:var(--candle)}
+.legal{border-top-color:rgba(244,237,225,.2);color:rgba(244,237,225,.6)}
+.legal a{color:rgba(244,237,225,.75)}
+.site-foot a:hover{color:var(--candle)}
+.stay+.site-foot .foot-top{border-top:1px solid rgba(244,237,225,.12);padding-top:64px}
+.site-foot .foot-mail{color:rgba(244,237,225,.8)}
