@@ -114,7 +114,7 @@ P1 = '''<div class="g12 proj-a rv">
     </div>'''
 P23 = '''<div class="g12 proj-b">
       <a class="left card-link rv" href="/work/art-of-coming-together/">
-        <div class="frame wipe"><img src="/assets/img/gallery.jpg" alt="Guests gathered in the brick gallery for The Art of Coming Together" loading="lazy" width="1800" height="1350"></div>
+        <div class="frame"><img src="/assets/img/gallery.jpg" alt="Guests gathered in the brick gallery for The Art of Coming Together" loading="lazy" width="1800" height="1350"></div>
         <div class="proj-text">
           <p class="meta">New York | Hurricane Dorian Relief</p>
           <h3 class="h3">The Art of Coming Together</h3>
@@ -165,7 +165,7 @@ HP = '''<a class="g12 hp-lead card-link rv" href="/work/urban-zen/">
         </div>
       </a>
       <a class="card-link rv" href="/work/science-of-spirituality/">
-        <div class="frame wipe"><img src="/assets/img/fire-ceremony.jpg" alt="Guests gathered around a fire ceremony in a courtyard at The Science of Spirituality" loading="lazy" width="1350" height="1800" style="object-position:center 60%"></div>
+        <div class="frame"><img src="/assets/img/fire-ceremony.jpg" alt="Guests gathered around a fire ceremony in a courtyard at The Science of Spirituality" loading="lazy" width="1350" height="1800" style="object-position:center 60%"></div>
         <div class="proj-text">
           <p class="meta">New York</p>
           <h3 class="h3">The Science of Spirituality</h3>
@@ -203,7 +203,7 @@ home = '''<main id="main">
 
 <section class="founder" aria-labelledby="founder-h">
   <div class="g12">
-    <figure class="rv"><div class="frame wipe"><img data-drift src="/assets/img/bethesda-wide.jpg" alt="The Boyd family singing at Bethesda Fountain in Central Park" loading="lazy" width="2000" height="1500"></div><figcaption class="cap">Bethesda Fountain, Central Park</figcaption></figure>
+    <figure class="rv"><div class="frame"><img data-drift src="/assets/img/bethesda-wide.jpg" alt="The Boyd family singing at Bethesda Fountain in Central Park" loading="lazy" width="2000" height="1500"></div><figcaption class="cap">Bethesda Fountain, Central Park</figcaption></figure>
     <div class="story rv">
       <p class="label">How it started</p>
       <h2 id="founder-h">The Answer Was&nbsp;No</h2>
