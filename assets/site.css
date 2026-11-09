@@ -510,3 +510,11 @@ a.hp-lead{display:grid}
 .pause:focus-visible{outline:2px solid var(--red);outline-offset:4px}
 .whole-grid img,.founder figure img,.hp-lead img,.hp-pair img,.about-hero img,.pj-hero,.pj-gallery img,.story-body aside img,.gal-r>video,.hp-lead .frame video{filter:saturate(.95) contrast(1.04)}
 @media (min-width:901px){.nav{background:none}}
+/* hero: links sit with the headline, pause tucked bottom right */
+@media (min-width:901px){
+  .hero-foot{flex-direction:column;align-items:flex-start;gap:34px}
+  .hero-links{padding-bottom:0;gap:34px}
+  .hero-links .pause{position:absolute;right:0;bottom:0}
+}
+/* pause: hidden from view, still reachable by keyboard and screen readers */
+.hero-links .pause:not(:focus-visible){position:absolute!important;width:1px;height:1px;min-height:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;padding:0;margin:-1px}
