@@ -28,6 +28,16 @@
     els.forEach(el => io.observe(el));
   } else els.forEach(el => el.classList.add('in'));
 
+
+  // gentle drift on large photos
+  const drift = document.querySelectorAll('[data-drift]');
+  if (drift.length && !still) {
+    let ticking = false;
+    const run = () => { const vh = innerHeight; drift.forEach(el => { const r = el.parentElement.getBoundingClientRect(); if (r.bottom < 0 || r.top > vh) return; const c = (r.top + r.height / 2 - vh / 2) / vh; el.style.setProperty('--dy', (c * -40).toFixed(1) + 'px'); }); ticking = false; };
+    addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(run); } }, { passive: true });
+    run();
+  }
+
   // prefill interest from ?interest=
   const sel = document.getElementById('interest');
   if (sel) {

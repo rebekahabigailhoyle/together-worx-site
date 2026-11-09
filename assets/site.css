@@ -432,3 +432,28 @@ a.card-link:hover h3{color:var(--red)}
 a.hp-lead{display:grid}
 @media (max-width:900px){a.hp-lead{display:block}}
 @media (max-width:900px){.hp-lead img,.founder figure img{max-width:none}}
+
+/* motion: brush reveal, drift, slow zoom */
+.frame{overflow:hidden;position:relative}
+.frame img,.frame video{display:block;width:100%;height:100%;object-fit:cover}
+.hp-lead .frame{grid-column:1/span 8}
+.hp-lead .frame video{aspect-ratio:16/9;filter:saturate(.9) contrast(1.04) sepia(.06)}
+.hp-pair .frame img{aspect-ratio:4/3}
+.whole-grid figure{overflow:hidden}
+.wipe{clip-path:inset(0 100% 0 0);transition:clip-path 1.5s cubic-bezier(.7,0,.2,1)}
+.rv.wipe{opacity:1;transform:none}
+.in .wipe,.wipe.in{clip-path:inset(0 0 0 0)}
+.whole-grid .w1{transition-delay:.15s}.whole-grid .w5{transition-delay:.12s}.whole-grid .w7{transition-delay:.24s}
+[data-drift]{transform:translate3d(0,var(--dy,0px),0) scale(1.12);will-change:transform}
+.card-link .frame img,.card-link .frame video{transition:transform 1.8s cubic-bezier(.2,.7,.2,1)}
+.card-link:hover .frame img,.card-link:hover .frame video{transform:scale(1.05)}
+.no-js .wipe{clip-path:none}
+@media (prefers-reduced-motion:reduce){.wipe{clip-path:none;transition:none}[data-drift]{transform:none}.card-link:hover .frame img,.card-link:hover .frame video{transform:none}}
+@media (max-width:900px){.hp-lead .frame{width:calc(100% + 2 * var(--pad));margin:0 calc(-1 * var(--pad))}.founder .frame{margin:0 calc(-1 * var(--pad))}.founder .frame img{margin:0;width:100%}}
+/* collage: clip the photo, not the observed figure */
+.whole-grid figure.wipe{clip-path:none;transition:none}
+.whole-grid figure.wipe>img{clip-path:inset(0 100% 0 0);transition:clip-path 1.5s cubic-bezier(.7,0,.2,1)}
+.whole-grid figure.wipe.in>img{clip-path:inset(0 0 0 0)}
+.whole-grid .w1>img{transition-delay:.15s}.whole-grid .w5>img{transition-delay:.12s}.whole-grid .w7>img{transition-delay:.24s}
+.no-js .whole-grid figure.wipe>img{clip-path:none}
+@media (prefers-reduced-motion:reduce){.whole-grid figure.wipe>img{clip-path:none;transition:none}}
