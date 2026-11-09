@@ -457,3 +457,4 @@ a.hp-lead{display:grid}
 .whole-grid .w1>img{transition-delay:.15s}.whole-grid .w5>img{transition-delay:.12s}.whole-grid .w7>img{transition-delay:.24s}
 .no-js .whole-grid figure.wipe>img{clip-path:none}
 @media (prefers-reduced-motion:reduce){.whole-grid figure.wipe>img{clip-path:none;transition:none}}
+.hp-lead .frame img{aspect-ratio:16/9}

@@ -147,7 +147,7 @@ P4 = '''<div class="g12 proj-c rv">
     </div>'''
 
 HP = '''<a class="g12 hp-lead card-link rv" href="/work/urban-zen/">
-      <div class="frame wipe"><video src="/assets/video/boyds-first-evening.mp4" poster="/assets/img/boyds-first-evening-poster.jpg" muted loop playsinline autoplay preload="metadata" aria-label="The Boyd family performing at the first Together WorX event, Urban Zen"></video></div>
+      <div class="frame wipe"><img src="/assets/img/urban-zen-room.jpg" alt="The candlelit room at Urban Zen, with tall windows and a crystal chandelier, full of guests at the first Together WorX event" loading="lazy" width="1600" height="906"></div>
       <div class="proj-text">
         <p class="meta">Urban Zen | New York</p>
         <h3 class="h3">A Conversation with Gary Zukav and Linda Francis</h3>
