@@ -184,7 +184,7 @@ home = '''<main id="main">
     <figure class="rv"><img src="/assets/img/bethesda-wide.jpg" alt="The Boyd family singing at Bethesda Fountain in Central Park" loading="lazy" width="2000" height="1500"><figcaption class="cap">Bethesda Fountain, Central Park</figcaption></figure>
     <div class="story rv">
       <p class="label">How it started</p>
-      <h2 id="founder-h">And the answer was <span class="red">no</span>.</h2>
+      <h2 id="founder-h">The Answer Was&nbsp;No</h2>
       <p class="body">I heard them before I saw them.</p>
       <p class="body">I was jogging through Central Park one Sunday when I heard voices so beautiful I could have sworn they were angels.</p>
       <p class="body">I followed the sound down the steps to Bethesda Fountain. A family stood in the arcade singing, and the stone caught their voices and carried them up into the tiled ceiling and back down over everyone passing through. People slowed. A few lingered. I stayed until they finished.</p>
@@ -392,7 +392,7 @@ story = [
 sp = "\n      ".join(f'<p class="turn">{s[5:]}</p>' if s.startswith("TURN:") else f"<p>{s}</p>" for s in story)
 about = '''<main id="main">
 {{HEADER}}
-<section class="about-top"><p class="label" style="margin-bottom:22px;font-weight:600">About</p><h1>And the answer was <span class="red">no</span>.</h1></section>
+<section class="about-top"><p class="label" style="margin-bottom:22px;font-weight:600">About</p><h1>The Answer Was&nbsp;No</h1></section>
 <figure class="about-hero"><img src="/assets/img/bethesda-wide.jpg" alt="The Boyd family singing under the arcade at Bethesda Fountain in Central Park" width="2000" height="1500"></figure>
 <section class="story-body g12">
   <div class="text">
