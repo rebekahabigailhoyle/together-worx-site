@@ -153,23 +153,37 @@ home = '''<main id="main">
   <video id="film" muted loop playsinline preload="metadata" poster="/assets/img/hero-poster.jpg" aria-label="Hands painting bright streaks of color on a canvas"><source src="/assets/video/painting-loop.mp4" type="video/mp4"></video>
   <div class="on-dark">{{HEADER}}</div>
   <div class="hero-foot">
-    <div class="hero-text"><h1>No one paints<br><em>the whole picture.</em></h1><p class="mission">''' + MISSION + '''</p></div>
+    <div class="hero-text"><h1>No one paints<br><em>the whole picture.</em></h1><p class="mission">Bringing people together through creativity and collaboration. Whoever you are, wherever you start.</p></div>
     <div class="hero-links"><a class="explore" href="#work">Explore Our Work <span aria-hidden="true">↓</span></a><a class="explore" href="/contact/?interest=collaborate">Discuss a Collaboration <span aria-hidden="true">→</span></a><button class="pause" id="pause" type="button">Pause</button></div>
   </div>
 </section>
 
 <section class="idea g12">
-  <h2 class="rv">What becomes possible<br><span>together.</span></h2>
+  <h2 class="rv" id="idea-h">What becomes possible<br><span>together.</span></h2>
 </section>
 
-<section class="whole" aria-labelledby="whole-h">
-  <div class="g12"><h2 id="whole-h" class="rv">The Whole Picture</h2></div>
+<section class="whole" aria-labelledby="idea-h">
   <div class="g12 whole-grid">
     <figure class="w1 rv"><img src="/assets/img/whole-canvas.jpg" alt="A group canvas with Together WorX painted in the middle, surrounded by names and hearts" loading="lazy" width="1046" height="1400"></figure>
     <figure class="w2 rv"><img src="/assets/img/whole-painting.jpg" alt="Children and adults painting cherry blossoms on a canvas together" loading="lazy" width="1400" height="1400"></figure>
     <figure class="w5 rv"><img src="/assets/img/whole-hug.jpg" alt="Two people hugging in the middle of a crowded room" loading="lazy" width="1050" height="1400"></figure>
     <figure class="w7 rv"><img src="/assets/img/whole-lecture.jpg" alt="Guests seated on the floor listening to Gary Zukav and Linda Francis" loading="lazy" width="1050" height="1400"></figure>
     <figure class="w6 rv"><img src="/assets/img/whole-mural.jpg" alt="People painting a city mural side by side" loading="lazy" width="1208" height="906"></figure>
+  </div>
+</section>
+
+<section class="founder" aria-labelledby="founder-h">
+  <div class="g12">
+    <figure class="rv"><img src="/assets/img/bethesda-wide.jpg" alt="The Boyd family singing at Bethesda Fountain in Central Park" loading="lazy" width="2000" height="1500"><figcaption class="cap">Bethesda Fountain, Central Park</figcaption></figure>
+    <div class="story rv">
+      <p class="label">How it started</p>
+      <h2 id="founder-h">The Answer Was&nbsp;No</h2>
+      <p class="pull">I heard them before I saw them.</p>
+      <p class="body">I was jogging through Central Park one Sunday when I heard voices so beautiful I could have sworn they were angels.</p>
+      <p class="more"><a class="tlink" href="/about/">Read the full story →</a></p>
+      <p class="sig">Rebekah Hoyle</p>
+      <p>Founder, Together WorX</p>
+    </div>
   </div>
 </section>
 
@@ -189,22 +203,6 @@ home = '''<main id="main">
   ''' + P23 + '''
 </section>
 
-<section class="founder" aria-labelledby="founder-h">
-  <div class="g12 rule">
-    <figure class="rv"><img src="/assets/img/bethesda-wide.jpg" alt="The Boyd family singing at Bethesda Fountain in Central Park" loading="lazy" width="2000" height="1500"><figcaption class="cap">Bethesda Fountain, Central Park</figcaption></figure>
-    <div class="story rv">
-      <p class="label">How it started</p>
-      <h2 id="founder-h">The Answer Was&nbsp;No</h2>
-      <p class="body">I heard them before I saw them.</p>
-      <p class="body">I was jogging through Central Park one Sunday when I heard voices so beautiful I could have sworn they were angels.</p>
-      <p class="body">I followed the sound down the steps to Bethesda Fountain. A family stood in the arcade singing, and the stone caught their voices and carried them up into the tiled ceiling and back down over everyone passing through. People slowed. A few lingered. I stayed until they finished.</p>
-      <p class="body">I was planning the first Together WorX evening then. Gary Zukav and Linda Francis had agreed to speak. Donna Karan's Urban Zen would be our setting. Standing at the fountain, I began imagining these voices in that room.</p>
-      <p style="margin-top:28px"><a class="tlink" href="/about/">Read the full story →</a></p>
-      <p class="sig">Rebekah Hoyle</p>
-      <p>Founder, Together WorX</p>
-    </div>
-  </div>
-</section>
 
 <section class="collab" aria-labelledby="collab-h">
   <div class="g12 rule">

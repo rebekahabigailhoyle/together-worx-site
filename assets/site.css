@@ -361,3 +361,48 @@ a.card-link:hover h3{color:var(--red)}
 .purpose .ptext{grid-column:8/span 5;padding-top:10px}
 .purpose .ptext p{font-size:19px;line-height:1.55;color:var(--body);margin-bottom:18px}
 @media (max-width:900px){.purpose{padding-bottom:84px}.purpose h2{font-size:40px}.purpose .ptext{margin-top:24px}.purpose .ptext p{font-size:17px}}
+
+/* ---- Nov 2026 refresh ---- */
+.idea{padding:170px var(--pad) 90px}
+.whole{padding:0 var(--pad) 160px}
+.whole .g12{max-width:none}
+.whole-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px;align-items:stretch}
+.whole-grid figure{margin:0!important}
+.whole-grid img{height:100%}
+.whole-grid .w2{grid-column:1/span 7;grid-row:1}.whole-grid .w2 img{aspect-ratio:1/1}
+.whole-grid .w1{grid-column:8/span 5;grid-row:1}.whole-grid .w1 img{aspect-ratio:auto}
+.whole-grid .w6{grid-column:1/span 6;grid-row:2}.whole-grid .w6 img{aspect-ratio:4/3}
+.whole-grid .w5{grid-column:7/span 3;grid-row:2}.whole-grid .w5 img{aspect-ratio:auto}
+.whole-grid .w7{grid-column:10/span 3;grid-row:2}.whole-grid .w7 img{aspect-ratio:auto}
+
+.founder{background:var(--ink);color:#fff;padding:150px var(--pad) 160px}
+.founder .g12{align-items:center}
+.founder figure{grid-column:1/span 7}
+.founder figure img{aspect-ratio:4/3}
+.founder .cap{color:rgba(255,255,255,.55)}
+.founder .story{grid-column:9/span 4;padding-top:0}
+.founder .label{color:rgba(255,255,255,.6)}
+.founder h2{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;font-size:clamp(52px,5.6vw,84px);line-height:.98;margin:20px 0 34px}
+.founder .pull{font-family:var(--serif);font-style:italic;font-size:30px;line-height:1.2;color:#fff;margin-bottom:18px}
+.founder .story p.body{font-size:18px;line-height:1.6;color:rgba(255,255,255,.82)}
+.founder .more{margin-top:30px}
+.founder .tlink{color:#fff}
+.founder .tlink:hover{color:var(--red)}
+.founder .sig{color:#fff;margin-top:44px}
+.founder .sig+p{color:rgba(255,255,255,.55)}
+.purpose{padding:150px var(--pad) 150px}
+@media (max-width:900px){
+  .idea{padding:96px var(--pad) 48px}
+  .whole{padding-bottom:90px}
+  .whole-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .whole-grid .w1,.whole-grid .w2,.whole-grid .w6{grid-column:1/-1!important;grid-row:auto}
+  .whole-grid .w5,.whole-grid .w7{grid-column:auto!important;grid-row:auto}
+  .whole-grid img{height:auto}
+  .whole-grid .w1 img{aspect-ratio:3/4}.whole-grid .w5 img,.whole-grid .w7 img{aspect-ratio:3/4}
+  .founder{padding:84px var(--pad) 90px}
+  .founder figure img{margin:0 calc(-1 * var(--pad));width:calc(100% + 2 * var(--pad))}
+  .founder .story{margin-top:40px}
+  .founder h2{font-size:52px}
+  .founder .pull{font-size:26px}
+  .purpose{padding:84px var(--pad) 84px}
+}
