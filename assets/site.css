@@ -500,3 +500,5 @@ a.hp-lead{display:grid}
 :root{--night:#0d0f17}
 .stay .fade{background:linear-gradient(90deg,var(--night) 0%,rgba(13,15,23,.25) 60%)}
 :root{--paper:#fdfbf8}
+:root{--paper:#ffffff}
+.whole-grid img,.founder figure img,.hp-lead img,.hp-pair img,.about-hero img,.pj-hero,.pj-gallery img,.story-body aside img,.gal-r>video,.hp-lead .frame video{filter:saturate(.93) contrast(1.05) sepia(.09)}
