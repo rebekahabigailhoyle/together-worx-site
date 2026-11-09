@@ -9,7 +9,7 @@ DESC = MISSION
 def head(title, desc, path, og="/assets/og.jpg"):
     full = "Together WorX | Community, Creativity &amp; Collaboration" if title == "Together WorX" else f"{title} | Together WorX"
     ld = json.dumps({"@context": "https://schema.org", "@type": "NGO", "name": "Together WorX",
-                     "legalName": "Together WorX Inc.", "url": SITE, "email": "hello@togetherworx.org",
+                     "legalName": "Together WorX Inc.", "alternateName": ["Together Works", "TogetherWorX", "Together WorX Inc."], "url": SITE, "email": "hello@togetherworx.org",
                      "nonprofitStatus": "Nonprofit501c3", "slogan": "No one paints the whole picture.",
                      "logo": SITE + "/assets/together-worx-logo-dark.png", "@id": SITE + "/#org"})
     if path == "/":
@@ -444,7 +444,7 @@ about = '''<main id="main">
   </div>
   <aside class="rv"><img src="/assets/img/first-night.jpg" alt="Rebekah with Gary Zukav, Linda Francis and the Boyds at the first event" loading="lazy" width="640" height="1136"><p class="cap">The first Together WorX event, Urban Zen</p></aside>
 </section>
-<section class="org"><div class="inner g12"><p>Together WorX Inc. is a registered 501(c)(3) nonprofit organization based in New York.</p></div></section>
+<section class="org"><div class="inner g12"><p>Together WorX Inc., sometimes written Together Works, is a registered 501(c)(3) nonprofit organization based in New York.</p></div></section>
 </main>
 '''
 pages.append(page("/about/", "About", "How Together WorX began: a song at Bethesda Fountain and the first event at Urban Zen.", about, "About", og="/assets/img/bethesda-wide.jpg"))
