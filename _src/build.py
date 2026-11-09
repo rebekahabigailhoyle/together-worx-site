@@ -20,6 +20,7 @@ def head(title, desc, path, og="/assets/og.jpg"):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="google-site-verification" content="f2CAPxY2Q7tR9GoJhNDx_mRVmQp67kJo-Qw7sIA9UQA">
 <title>{full}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{SITE}{path}">
