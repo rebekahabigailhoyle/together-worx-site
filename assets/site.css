@@ -355,3 +355,4 @@ a.card-link:hover h3{color:var(--red)}
   .whole-grid figure{grid-column:auto!important;margin-top:0!important}
   .whole-grid .w1,.whole-grid .w2,.whole-grid .w6{grid-column:1/-1!important}
 }
+.red{color:var(--red)}
