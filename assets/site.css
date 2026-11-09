@@ -499,3 +499,4 @@ a.hp-lead{display:grid}
 @media (max-width:900px){.hp-pair+.hp-lead{margin-top:20px}.hp-lead.rev .frame{width:calc(100% + 2 * var(--pad));margin:0 calc(-1 * var(--pad))}}
 :root{--night:#0d0f17}
 .stay .fade{background:linear-gradient(90deg,var(--night) 0%,rgba(13,15,23,.25) 60%)}
+:root{--paper:#fdfbf8}
