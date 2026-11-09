@@ -519,3 +519,10 @@ a.hp-lead{display:grid}
 /* pause: hidden from view, still reachable by keyboard and screen readers */
 .hero-links .pause:not(:focus-visible){position:absolute!important;width:1px;height:1px;min-height:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;padding:0;margin:-1px}
 .whole-grid .w1 img{filter:none}
+/* About: the story speaks in the same serif voice as the homepage */
+.about-top h1{font-family:var(--serif);font-weight:400;letter-spacing:-.01em}
+.story-body .text>p:first-child{font-family:var(--serif);font-style:italic;font-size:30px;line-height:1.2;color:var(--ink);margin-bottom:22px}
+.story-body .turn{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0}
+.about-hero .cap{padding:0 var(--pad)}
+@media (max-width:900px){.story-body .text>p:first-child{font-size:26px}}
+.story-body .text p.turn{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0;font-size:32px}

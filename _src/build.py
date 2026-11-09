@@ -3,7 +3,7 @@
 import os, json
 
 SITE = "https://togetherworx.org"
-MISSION = "Together WorX brings people, creativity, and resources together to support communities and build a more connected, resilient future."
+MISSION = "Bringing people together through creativity and collaboration. Whoever you are, wherever you start."
 DESC = MISSION
 
 def head(title, desc, path, og="/assets/og.jpg"):
@@ -435,7 +435,7 @@ sp = "\n      ".join(f'<p class="turn">{s[5:]}</p>' if s.startswith("TURN:") els
 about = '''<main id="main">
 {{HEADER}}
 <section class="about-top"><p class="label" style="margin-bottom:22px;font-weight:600">About</p><h1>The Answer Was&nbsp;No</h1></section>
-<figure class="about-hero"><img src="/assets/img/bethesda-wide.jpg" alt="The Boyd family singing under the arcade at Bethesda Fountain in Central Park" width="2000" height="1500"></figure>
+<figure class="about-hero"><img src="/assets/img/bethesda-wide.jpg" alt="The Boyd family singing under the arcade at Bethesda Fountain in Central Park" width="2000" height="1500"><figcaption class="cap">Bethesda Fountain, Central Park, August 27, 2017</figcaption></figure>
 <section class="story-body g12">
   <div class="text">
       ''' + sp + '''
@@ -470,7 +470,7 @@ con = '''<main id="main">
 {{HEADER}}
 <section class="simple">
   <h1>Contact</h1>
-  <p class="lead">Tell us who you are and what you have in mind. For a collaboration, share who's involved, what's needed and how you'd like to help.</p>
+  <p class="lead">Tell us a little about yourself and what you have in mind. If it's a collaboration, share the idea and who's involved.</p>
   <div class="g12 contact-grid">
     <div class="info"><a class="mail" href="mailto:hello@togetherworx.org">hello@togetherworx.org</a></div>
     <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="js-form" data-ok="Thank you. Your message is on its way.">
