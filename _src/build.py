@@ -60,7 +60,7 @@ STAY = '''<section class="stay" aria-labelledby="stay-h">
   <div class="fade" aria-hidden="true"></div>
   <div class="inner g12">
     <div class="copy">
-      <h2 id="stay-h">Stay Connected.</h2>
+      <h2 id="stay-h">Stay Connected</h2>
       <p>Be the first to hear about new projects and collaborations.</p>
     </div>
     <form name="updates" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="js-form" data-ok="Thank you. You're on the list.">
@@ -175,6 +175,16 @@ HP = '''<a class="g12 hp-lead card-link rv" href="/work/urban-zen/">
       </a>
     </div>'''
 
+SSLEAD = '''<a class="g12 hp-lead rev card-link rv" href="/work/soul-sunday/">
+      <div class="frame"><img src="/assets/img/soul-sunday-lecture.jpg" alt="Guests seated on the floor listening to Gary Zukav and Linda Francis at Tantris" loading="lazy" width="1600" height="1600"></div>
+      <div class="proj-text">
+        <p class="meta">Tantris | West Hollywood, California</p>
+        <h3 class="h3">Soul Sunday</h3>
+        <p class="with">Authentic Power &amp; Spiritual Partnership</p>
+        <p class="desc">An afternoon with Gary Zukav and Linda Francis featuring movement, a community brunch, and a conversation on authentic power and spiritual partnership.</p>
+      </div>
+    </a>'''
+
 # ---------- home ----------
 home = '''<main id="main">
 <section class="hero">
@@ -270,7 +280,7 @@ work = '''<main id="main">
 {{HEADER}}
 <section class="work" style="padding-top:110px">
   <h1 class="page-title">Our Work</h1>
-  ''' + P1 + P23 + P4 + '''
+  ''' + HP + SSLEAD + '''
 </section>
 ''' + ARCH + '''
 </main>
@@ -327,7 +337,7 @@ ac = '''<main id="main">
 <section class="pj-gallery">
   <div class="g12">
     <figure class="gal-l rv"><img src="/assets/img/gallery-2.jpg" alt="Guests seated in the brick gallery during the conversation" loading="lazy" width="1350" height="1800"></figure>
-    <figure class="gal-r rv" style="margin-top:200px"><img src="/assets/img/bahamas-relief.jpg" alt="Volunteers in Together WorX shirts" loading="lazy" width="1600" height="886" style="aspect-ratio:16/9"><figcaption class="cap" style="margin-top:12px">Bahamas relief.</figcaption></figure>
+    <figure class="gal-r rv"><img src="/assets/img/bahamas-relief.jpg" alt="Volunteers in Together WorX shirts" loading="lazy" width="1600" height="886" style="aspect-ratio:16/9"><figcaption class="cap" style="margin-top:12px">Bahamas relief.</figcaption></figure>
   </div>
 </section>
 <section class="pj-gallery">
@@ -462,7 +472,7 @@ pages.append(page("/collaborate/", "Collaborate", "Work with Together WorX or su
 con = '''<main id="main">
 {{HEADER}}
 <section class="simple">
-  <h1>Contact.</h1>
+  <h1>Contact</h1>
   <p class="lead">Tell us who you are and what you have in mind. For a collaboration, share who's involved, what's needed and how you'd like to help.</p>
   <div class="g12 contact-grid">
     <div class="info"><a class="mail" href="mailto:hello@togetherworx.org">hello@togetherworx.org</a></div>
@@ -492,7 +502,7 @@ pages.append(page("/contact/", "Contact", "Get in touch with Together WorX.", co
 pv = '''<main id="main">
 {{HEADER}}
 <section class="simple">
-  <h1>Privacy.</h1>
+  <h1>Privacy</h1>
   <div class="prose">
     <p>When you write to us or sign up for updates, we receive the details you choose to share, such as your name and email address.</p>
     <p>We use them only to reply to you or to send the updates you asked for. We don't sell or share them.</p>

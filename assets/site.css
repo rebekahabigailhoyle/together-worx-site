@@ -481,3 +481,19 @@ a.hp-lead{display:grid}
 .site-foot a:hover{color:var(--candle)}
 .stay+.site-foot .foot-top{border-top:1px solid rgba(244,237,225,.12);padding-top:64px}
 .site-foot .foot-mail{color:rgba(244,237,225,.8)}
+
+/* warm white page, consistent galleries, Our Work layout */
+:root{--paper:#fbf8f3}
+.skip,.nav{background:var(--paper)}
+@media (max-width:900px){.nav{background:var(--paper)}}
+.pj-gallery .g12{align-items:start;row-gap:24px}
+.gal-a,.gal-b,.gal-l,.gal-r,.gal-c{margin-top:0!important;align-self:start}
+.gal-r{grid-column:7/span 6}
+.gal-r figcaption,.gal-r .cap{margin-top:12px!important}
+.gal-c{grid-column:1/span 8}
+.hp-lead.rev .frame{grid-column:5/span 8;grid-row:1}
+.hp-lead.rev .proj-text{grid-column:1/span 4;grid-row:1}
+.hp-lead.rev .frame img{aspect-ratio:16/10}
+.page-title+.hp-lead{margin-top:0}
+.hp-pair+.hp-lead{margin-top:110px}
+@media (max-width:900px){.hp-pair+.hp-lead{margin-top:20px}.hp-lead.rev .frame{width:calc(100% + 2 * var(--pad));margin:0 calc(-1 * var(--pad))}}
