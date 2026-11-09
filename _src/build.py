@@ -185,8 +185,10 @@ home = '''<main id="main">
     <div class="story rv">
       <p class="label">How it started</p>
       <h2 id="founder-h">It began with a song in the park.</h2>
-      <p class="body">I was jogging through Central Park one Sunday when I heard voices so beautiful they seemed almost angelic. I followed the music to Bethesda Fountain, where a family was singing together. Their harmonies were extraordinary. I stood listening, completely captivated.</p>
-      <p class="body">At the time, I was preparing the first Together WorX event. Gary Zukav and Linda Francis had agreed to speak, and Donna Karan's Urban Zen would be our setting. As I listened to the family, I began to imagine their voices filling that beautiful space. I knew I wanted them there.</p>
+      <p class="body">I heard them before I saw them.</p>
+      <p class="body">I was jogging through Central Park one Sunday when I heard voices so beautiful I could have sworn they were angels.</p>
+      <p class="body">I followed the sound down the steps to Bethesda Fountain. A family stood in the arcade singing, and the stone caught their voices and carried them up into the tiled ceiling and back down over everyone passing through. People slowed. A few lingered. I stayed until they finished.</p>
+      <p class="body">I was planning the first Together WorX evening then. Gary Zukav and Linda Francis had agreed to speak. Donna Karan's Urban Zen would be our setting. Standing at the fountain, I began imagining these voices in that room.</p>
       <p style="margin-top:28px"><a class="tlink" href="/about/">Read the full story →</a></p>
       <p class="sig">Rebekah Hoyle</p>
       <p>Founder, Together WorX</p>
@@ -372,14 +374,20 @@ pages.append(page("/work/soul-sunday/", "Soul Sunday", "Soul Sunday: Authentic P
 
 # about
 story = [
- "I was jogging through Central Park one Sunday when I heard voices so beautiful they seemed almost angelic. I followed the music to Bethesda Fountain, where a family was singing together. Their harmonies were extraordinary. I stood listening, completely captivated.",
- "At the time, I was preparing the first Together WorX event. Gary Zukav and Linda Francis had agreed to speak, and Donna Karan's Urban Zen would be our setting. As I listened to the family, I began to imagine their voices filling that beautiful space. I knew I wanted them there.",
- "The following Sunday, I returned to the fountain, hoping to find them. To my delight, they were there. I introduced myself, told them about the event, and was given a number to call.",
- "TURN:The answer was no.",
- "Still, their music stayed with me. The next Sunday, I found myself back at the fountain. I was becoming something of a nudnik, I admit, but I couldn't resist asking once more. I told them how deeply their music had moved me and how much it would mean to have them join us.",
- "TURN:This time, they agreed.",
- "A few weeks later, I stood at Urban Zen listening to those same extraordinary voices, now filling a room of people who had come together for our very first event.",
- "The family I met that Sunday was the Boyd family, now known as Infinity Song.",
+ 'I heard them before I saw them.',
+ 'I was jogging through Central Park one Sunday when I heard voices so beautiful I could have sworn they were angels.',
+ 'I followed the sound down the steps to Bethesda Fountain. A family stood in the arcade singing, and the stone caught their voices and carried them up into the tiled ceiling and back down over everyone passing through. People slowed. A few lingered. I stayed until they finished.',
+ "I was planning the first Together WorX evening then. Gary Zukav and Linda Francis had agreed to speak. Donna Karan's Urban Zen would be our setting. Standing at the fountain, I began imagining these voices in that room.",
+ 'The next Sunday I went back. They were there. I introduced myself, told them about the evening, and walked away with a phone number.',
+ 'I called.',
+ 'TURN:The answer was no.',
+ 'That should have been the end of it. But their music stayed with me all week.',
+ "So the following Sunday I was at the fountain again. I'll admit I was becoming a bit of a nudnik. I asked one more time. I told them how deeply their singing had moved me, and how much I wanted them to be part of the evening.",
+ 'TURN:They said yes.',
+ 'A few weeks later, those same voices filled the room at Urban Zen for our first Together WorX event.',
+ 'That family was the Boyds, now known as Infinity Song.',
+ "But on that Sunday, they were a family singing in the park, and I was a woman with an evening to put together and a no I wasn't ready to accept.",
+ "I'm glad I went back.",
 ]
 sp = "\n      ".join(f'<p class="turn">{s[5:]}</p>' if s.startswith("TURN:") else f"<p>{s}</p>" for s in story)
 about = '''<main id="main">
